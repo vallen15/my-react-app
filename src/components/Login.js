@@ -79,7 +79,7 @@ function Login() {
           </label>
           <button type="submit">Login</button>
           <p>
-            Belum punya akun? <Link to="/register">Daftar di sini</Link>
+            Belum punya akun?.... <Link to="/register">Daftar di sini</Link>
           </p>
         </form>
       </div>
