@@ -1,0 +1,149 @@
+/* src/css/UserHome.css */
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1F2937; /* Navy */
+  color: white;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #F97316; /* Oranye */
+}
+
+.navbar nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar nav ul li {
+  margin-left: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.navbar nav ul li:hover {
+  transform: scale(1.1);
+}
+
+.navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.navbar nav ul li.active a {
+  color: #F97316; /* Oranye */
+  font-weight: bold;
+  border-bottom: 2px solid #F97316;
+}
+
+.navbar nav ul li a:hover {
+  color: #ccc;
+}
+
+/* Main Content */
+.content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Home Content Styling */
+.home-content {
+  text-align: center;
+  padding: 2rem;
+  background-color: #FFFFFF; /* Putih */
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.home-content:hover {
+  transform: scale(1.02);
+}
+
+/* Gallery Styling */
+.gallery {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.gallery h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  color: #1F2937; /* Navy */
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Museum Rules Section */
+.rules {
+  background-color: #F3F4F6; /* Abu-Abu Terang */
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2.5rem;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.rules:hover {
+  transform: scale(1.02);
+}
+
+.rules h3 {
+  font-size: 1.6rem;
+  color: #1F2937; /* Navy */
+  margin-bottom: 1.5rem;
+}
+
+.rules ul {
+  list-style: none;
+  padding: 0;
+}
+
+.rules ul li {
+  margin: 0.7rem 0;
+  padding: 0.7rem;
+  background-color: #FFFFFF; /* Putih */
+  border-radius: 6px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  color: #555;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

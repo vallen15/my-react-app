@@ -1,0 +1,109 @@
+/* Container Styling */
+.history-container {
+    padding: 20px;
+    background: linear-gradient(135deg, #f9f9f9, #ffffff); /* Latar belakang gradasi */
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Bayangan */
+    margin: 20px auto;
+    max-width: 1000px;
+    animation: fadeIn 0.5s ease-in-out; /* Animasi saat dimuat */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+/* Table Styling */
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.history-table th,
+.history-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.history-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.history-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.history-table tr:hover {
+    background-color: #e9ecef;
+    transition: background-color 0.3s ease;
+}
+
+.history-table td {
+    color: #555;
+}
+
+/* Styling for Last Column */
+.history-table td:last-child {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Delete Button Styling */
+.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delete-btn:hover {
+    background-color: #e63939;
+    transform: scale(1.1);
+}
+
+.delete-btn:active {
+    transform: scale(1);
+    background-color: #cc0000;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .history-table th, .history-table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .delete-btn {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+}

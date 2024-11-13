@@ -1,0 +1,247 @@
+/* src/css/App.css */
+
+/* Umum */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9; /* Latar belakang aplikasi */
+}
+
+/* Kontainer Aplikasi */
+.app-container {
+  display: flex;
+  min-height: 100vh; /* Tinggi minimal untuk menutupi viewport */
+  overflow: hidden; /* Menghindari overflow yang tidak diinginkan */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50; /* Warna latar belakang sidebar */
+  padding: 20px; /* Padding untuk sidebar */
+  color: #ecf0f1; /* Warna teks sidebar */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Menyusun konten dari atas */
+}
+
+.sidebar h2 {
+  text-align: center; /* Memusatkan judul di sidebar */
+  font-size: 1.5em; /* Ukuran font untuk judul */
+  margin-bottom: 20px; /* Spasi di bawah judul */
+}
+
+.sidebar nav ul {
+  list-style-type: none; /* Menghilangkan bullet points */
+  padding: 0; /* Menghilangkan padding default */
+}
+
+.sidebar nav ul li {
+  margin: 10px 0; /* Spasi antar item menu */
+}
+
+.sidebar nav ul li a {
+  color: #ecf0f1; /* Warna tautan */
+  text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+  padding: 10px 15px; /* Padding untuk tautan */
+  display: block; /* Menampilkan tautan sebagai blok */
+  border-radius: 5px; /* Sudut bulat untuk tautan */
+  transition: background-color 0.3s ease; /* Transisi untuk hover */
+}
+
+.sidebar nav ul li a:hover {
+  background-color: #34495e; /* Warna latar belakang saat hover */
+}
+
+/* Konten Utama */
+.content {
+  flex: 1; /* Membuat konten utama mengambil ruang yang tersisa */
+  padding: 20px; /* Padding untuk konten utama */
+  background-color: #ecf0f1; /* Latar belakang konten utama */
+}
+
+/* Halaman Login */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Tinggi penuh viewport */
+  background-color: #ecf0f1; /* Latar belakang halaman login */
+}
+
+.login-container h1 {
+  color: #34495e; /* Warna judul halaman login */
+  margin-bottom: 20px; /* Spasi di bawah judul */
+}
+
+.login-form {
+  background-color: white; /* Latar belakang form login */
+  padding: 30px; /* Padding untuk form */
+  border-radius: 10px; /* Sudut bulat untuk form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan untuk form */
+  width: 300px; /* Lebar form */
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column; /* Menyusun label secara vertikal */
+  margin-bottom: 15px; /* Spasi di bawah label */
+  color: #2c3e50; /* Warna teks label */
+}
+
+.login-form input {
+  padding: 10px; /* Padding untuk input */
+  border: 1px solid #ddd; /* Border untuk input */
+  border-radius: 5px; /* Sudut bulat untuk input */
+}
+
+.login-button {
+  background-color: #3498db; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  padding: 10px; /* Padding untuk tombol */
+  border: none; /* Menghilangkan border tombol */
+  border-radius: 5px; /* Sudut bulat untuk tombol */
+  cursor: pointer; /* Mengubah kursor saat hover */
+  font-size: 16px; /* Ukuran font untuk tombol */
+}
+
+.login-button:hover {
+  background-color: #2980b9; /* Warna latar belakang saat hover tombol */
+}
+
+/* Menambahkan media query untuk responsif */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Mengurangi lebar sidebar di layar kecil */
+  }
+
+  .content {
+    padding: 10px; /* Mengurangi padding di konten untuk layar kecil */
+  }
+}
+
+/* src/css/App.css */
+
+/* Form Container */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #333;
+}
+
+.form-container label {
+  display: block;
+  margin-top: 10px;
+  color: #333;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 4px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-container button:hover {
+  background-color: #2980b9;
+}
+
+.form-container .error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+/* src/css/App.css */
+
+/* Form Container */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #333;
+}
+
+.form-container label {
+  display: block;
+  margin-top: 10px;
+  color: #333;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 4px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-container button:hover {
+  background-color: #2980b9;
+}
+
+.form-container p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.form-container p a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.form-container p a:hover {
+  text-decoration: underline;
+}
+
+.form-container .error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
